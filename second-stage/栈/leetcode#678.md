@@ -31,23 +31,84 @@
 **思路**
 
 ```
-
+1、专项刷题当然使用专项思路了 - 栈
+2、想着用两个栈去管理，一个存"("，一个存"*"
+3、然后用")"进行抵消处理
+4、另外比较重要的一点就是在栈中存入的是"下标"，用来判断最后剩余的是否能抵消判断
 ```
 
 **实现**
 
 ```js
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var checkValidString = function (s) {
+  if (!s.length) return false;
 
+  // 左括号栈
+  const stack = [];
+  // 星星栈
+  const starStack = [];
+
+  // 消除可以快速匹配的右括号
+  for (let i = 0; i < s.length; i++) {
+    switch (s[i]) {
+      case "(":
+        {
+          stack.push(i);
+        }
+        break;
+      case "*":
+        {
+          starStack.push(i);
+        }
+        break;
+      case ")":
+        {
+          // 先用原栈消除，再用星星栈消除
+          if (stack.length) {
+            stack.pop();
+          } else if (starStack.length) {
+            starStack.pop();
+          } else {
+            return false;
+          }
+        }
+        break;
+    }
+  }
+
+  if (stack.length > starStack.length) return false;
+
+  // 消除剩下的
+  while (stack.length && starStack.length) {
+    // 关键点 - stack出栈的 一定要小于starStack出栈的
+    // 不然无非消除
+    if (stack.pop() > starStack.pop()) {
+      return false;
+    }
+  }
+
+  return true;
+};
 ```
 
+> 常见的算法时间复杂度大小
+> 由小到大依次为：Ο(1)＜ Ο(log2n)＜ Ο(n)＜ Ο(nlog2n)＜ Ο(n2)＜ Ο(n3)＜ Ο(nk) ＜ Ο(2n) ，随着问题规模 n 的不断增大，上述时间复杂度不断增大，算法的执行效率越低
+> while 即为 O(log2n)
+> for 即为 O(n)
+
 **实现-复杂度分析**  
-`时间复杂度`：xxx  
-`空间复杂度`：xxx
+`时间复杂度`：O(n)，即 for 循环  
+`空间复杂度`：O(2n)，即 stack 与 starStack 的长度
 
 **官方**
 
 ```js
-
+官方暂未给出使用栈的方法，因为使用动态规划和贪心算法是最快的最好的，
+等后面学到了添加进去
 ```
 
 **官方-复杂度分析**  
