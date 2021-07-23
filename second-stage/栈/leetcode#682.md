@@ -44,25 +44,64 @@
 **思路**
 
 ```
-
+1、专项刷题当然使用专项思路了 - 栈
+2、无法可说比较简单，直接上手
 ```
 
 **实现**
 
 ```js
+/**
+ * @param {string[]} ops
+ * @return {number}
+ */
+var calPoints = function (ops) {
+  if (!ops.length) return false;
 
+  const stack = [];
+
+  ops.forEach((e) => {
+    switch (e) {
+      case "C":
+        {
+          if (stack.length < 1) return false;
+          stack.pop();
+        }
+        break;
+      case "D":
+        {
+          if (stack.length < 1) return false;
+          stack.push(+stack[stack.length - 1] * 2);
+        }
+        break;
+      case "+":
+        {
+          if (stack.length < 2) return false;
+          stack.push(+stack[stack.length - 1] + stack[stack.length - 2]);
+        }
+        break;
+      default:
+        {
+          stack.push(+e);
+        }
+        break;
+    }
+  });
+
+  return stack.reduce((a, b) => a + b);
+};
 ```
 
 **实现-复杂度分析**  
-`时间复杂度`：xxx  
-`空间复杂度`：xxx
+`时间复杂度`：O(n)，即 ops 的长度
+`空间复杂度`：O(n)，即 stack 的长度
 
 **官方**
 
 ```js
-
+暂无;
 ```
 
 **官方-复杂度分析**  
-`时间复杂度`：xxx  
-`空间复杂度`：xxx
+`时间复杂度`：暂无  
+`空间复杂度`：暂无
