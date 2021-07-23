@@ -93,8 +93,8 @@ var calPoints = function (ops) {
 ```
 
 **实现-复杂度分析**  
-`时间复杂度`：O(n)，即 ops 的长度
-`空间复杂度`：O(n)，即 stack 的长度
+`时间复杂度`：O(n)，即 ops 的长度  
+`空间复杂度`：O(n)，即 stack 的长度  
 
 **官方**
 
