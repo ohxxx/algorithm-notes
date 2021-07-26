@@ -48,25 +48,85 @@ myQueue.empty(); // return false
 **思路**
 
 ```
-
+1、专项刷题当然使用专项思路了 - 栈
+2、因为要实现一个队列，而队列是首尾两端操作，所以一个栈肯定满足不了
+3、两个栈进行完成，一个进行队列操作处理，一个临时存储栈的数据（反转数据）
 ```
 
 **实现**
 
 ```js
+var MyQueue = function () {
+  this.stack = [];
+  this.tempStack = [];
+};
 
+MyQueue.prototype.push = function (x) {
+  this.stack.push(x);
+};
+
+MyQueue.prototype.pop = function () {
+  if (this.tempStack.length) {
+    return this.tempStack.pop();
+  }
+  while (this.stack.length) {
+    this.tempStack.push(this.stack.pop());
+  }
+  return this.tempStack.pop();
+};
+
+MyQueue.prototype.peek = function () {
+  const tempPop = this.pop();
+  this.tempStack.push(tempPop);
+  return tempPop;
+};
+
+MyQueue.prototype.empty = function () {
+  return !this.stack.length && !this.tempStack.length;
+};
 ```
 
 **实现-复杂度分析**  
-`时间复杂度`：xxx  
-`空间复杂度`：xxx
+`时间复杂度`：O(1)，即 pop 和 peek 的均摊时间为 O(1)，push 和 empty 为 O(1)  
+`空间复杂度`：O(n)，即栈长度
 
 **官方**
 
 ```js
+var MyQueue = function () {
+  this.inStack = [];
+  this.outStack = [];
+};
 
+MyQueue.prototype.push = function (x) {
+  this.inStack.push(x);
+};
+
+MyQueue.prototype.pop = function () {
+  if (!this.outStack.length) {
+    this.in2out();
+  }
+  return this.outStack.pop();
+};
+
+MyQueue.prototype.peek = function () {
+  if (!this.outStack.length) {
+    this.in2out();
+  }
+  return this.outStack[this.outStack.length - 1];
+};
+
+MyQueue.prototype.empty = function () {
+  return this.outStack.length === 0 && this.inStack.length === 0;
+};
+
+MyQueue.prototype.in2out = function () {
+  while (this.inStack.length) {
+    this.outStack.push(this.inStack.pop());
+  }
+};
 ```
 
 **官方-复杂度分析**  
-`时间复杂度`：xxx  
-`空间复杂度`：xxx
+`时间复杂度`：O(1)，push 和 empty 为 O(1)，pop 和 peek 为均摊 O(1)。对于每个元素，至多入栈和出栈各两次，故均摊复杂度为 O(1)。  
+`空间复杂度`：O(n)，其中 n 是操作总数。对于有 n 次 push 操作的情况，队列中会有 n 个元素，故空间复杂度为 O(n)。
