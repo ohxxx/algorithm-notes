@@ -12,8 +12,8 @@
 
 > 从数据存储的角度看，实现栈有两种方式，一个是以数组做基础，一种是以链表做基础，数组是最简单的实现方式。栈的基本操作包括：创建栈、出栈、入栈、获取栈顶元素、获取栈的大小、清空栈。
 
-**[`demo - array`](./stack-array.js)**  
-**[`demo - object`](./stack.js)**
+**[`StackArray Demo`](./stack-array.js)**  
+**[`StackObject Demo`](./stack.js)**
 
 > 实现了以下功能
 
