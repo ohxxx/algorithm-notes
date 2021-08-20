@@ -8,7 +8,7 @@
 
 **第一阶段**
 
-- [ ] 梳理全部知识点概念 `(9/12)`
+- [ ] 梳理全部知识点概念 `(10/12)`
 - [ ] 基础点实践 `(2/12)`
 
 **第二阶段**
@@ -30,7 +30,7 @@
 - [x] 散列表 [`Docs`](./first-stage/hash-table/README.md)
 - [x] 递归 [`Docs`](./first-stage/recursive/README.md)
 - [x] 树 [`Docs`](./first-stage/tree/README.md)
-- [ ] 二查堆和堆排序
+- [x] 二查堆和堆排序
 - [ ] 图
 - [ ] 排序和搜索算法
 
