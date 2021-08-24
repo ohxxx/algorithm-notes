@@ -8,7 +8,7 @@
 
 **第一阶段**
 
-- [ ] 梳理全部知识点概念 `(10/12)`
+- [ ] 梳理全部知识点概念 `(11/12)`
 - [ ] 基础点实践 `(2/12)`
 
 **第二阶段**
@@ -31,13 +31,13 @@
 - [x] 递归 [`Docs`](./first-stage/recursive/README.md)
 - [x] 树 [`Docs`](./first-stage/tree/README.md)
 - [x] 二查堆和堆排序
-- [ ] 图
+- [x] 图
 - [ ] 排序和搜索算法
 
 **基础点实践**
 
-- [x] 栈 [`Stack Demo`](./first-stage/stack/stack.js) 、[`StackWeakMap Demo`](./first-stage/stack/stack-weakMap.js)、[`StackSymbol Demo`](./first-stage/stack/stack-symbol.js)、[`StackArray Demo`](./first-stage/stack/stack-array.js)
-- [ ] 队列和双端队列 [`Queue Demo`](./first-stage/queue/queue.js) 、[`Deque Demo`](./first-stage/queue/deque.js)
+- [x] 栈
+- [ ] 队列和双端队列
 - [ ] 链表
 - [ ] 集合
 - [ ] 字典
