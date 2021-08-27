@@ -7,6 +7,14 @@ class Deque {
 
   /** 从双端队列的前端添加元素 */
   addFront(element) {
+    /**
+     * 添加元素有三种情况
+     *  1、队列为空
+     *  2、一个元素已经被从双端队列的前端删除，也就是说lowestCount >= 1，
+     *    这种情况下、我们只需要将lowestCount减 1 并将新元素的值放在这个键的位置上
+     *  3、当lowestCount为0的情况。可以设置一个负值的键，同时更新用于计算双端队列的长度的逻辑，
+     *    使其也能包含负键值。这种情况下，添加一个新元素的操作依然能保持最低的计算成本。
+     */
     if (this.isEmpty()) {
       this.addBack(element)
     } else if (this.lowestCount > 0) {
