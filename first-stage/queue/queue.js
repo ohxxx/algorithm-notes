@@ -30,7 +30,7 @@ class Queue {
 
   /** 检查队列是否为空，并获取它的长度 */
   isEmpty() {
-    return this.count - this.lowestCount === 0
+    return this.size() === 0;
   }
 
   /** 查看队队列个数 */
@@ -47,7 +47,7 @@ class Queue {
 
   /** 拓展-输出当前队列 */
   toString() {
-    if (this.isEmpty()) return null;
+    if (this.isEmpty()) return '';
 
     let objString = `${this.items[this.lowestCount]}`
     for (let i = this.lowestCount + 1; i < this.count; i++) {
