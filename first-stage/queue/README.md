@@ -85,3 +85,5 @@ peekBack() 该方法返回双端队列后端的第一个元素（实现方法和
 
 > 计算的方式：f[i][j] = f[i-1][j-1] + f[i-1][j], i 代表行数，j 代表一行的第几个数，如果 j= 0 或者 j = i ,则 f[i][j] = 1。
 > ![image](./assets/3.png)
+
+**[`YangHui Demo`](./yanghui.js)**
