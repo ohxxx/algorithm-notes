@@ -14,6 +14,8 @@ class Queue {
 
   // 出队
   dequeue() {
+    if (this.isEmpty()) return null;
+
     const temp = this.items[this.lowestCount]
     delete this.items[this.lowestCount]
     this.lowestCount++
@@ -23,6 +25,11 @@ class Queue {
   // 队列长度
   size() {
     return this.count - this.lowestCount
+  }
+
+  // 队列是否为空
+  isEmpty() {
+    return this.size() === 0
   }
 }
 

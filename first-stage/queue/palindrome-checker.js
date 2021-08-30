@@ -8,6 +8,8 @@ class Deque {
 
   // 前端-出队
   removeFront() {
+    if (this.isEmpty()) return null;
+
     const temp = this.items[this.lowestCount]
     delete this.items[this.lowestCount]
     this.lowestCount++
@@ -22,6 +24,8 @@ class Deque {
 
   // 后端-出队
   removeBack() {
+    if (this.isEmpty()) return null;
+
     this.count--
     const temp = this.items[this.count]
     delete this.items[this.count]
@@ -31,6 +35,11 @@ class Deque {
   // 双端队列长度
   size() {
     return this.count - this.lowestCount
+  }
+
+  // 双端队列是否为空
+  isEmpty() {
+    return this.size() === 0
   }
 }
 
