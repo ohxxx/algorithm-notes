@@ -77,7 +77,10 @@ class LinkedList {
   }
 
   // 从链表中移除一个元素
-  remove(element) { }
+  remove(element) {
+    const index = this.indexOf(element);
+    return this.removeAt(index);
+  }
 
   // 返回元素在链表中的索引
   indexOf(element) {
@@ -157,6 +160,8 @@ xxx.push(444)
 // xxx.removeAt(1)
 xxx.insert(000, 0)
 xxx.insert(333, 3)
+
+xxx.remove(111)
 
 console.log(xxx.indexOf(222));
 
