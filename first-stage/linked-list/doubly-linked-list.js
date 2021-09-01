@@ -49,7 +49,7 @@ class DoublyLinkedList {
         } else {
           node.next = this.head
           this.head.prev = node
-          this.tail = node
+          this.head = node
         }
       } else if (index === this.count) { // 结尾
         current = this.tail
@@ -117,7 +117,7 @@ class DoublyLinkedList {
         } else {
           this.head.prev = undefined
         }
-      } else if (index === this.count - 1) { // 中间
+      } else if (index === this.count - 1) { // 结尾
         current = this.tail
         this.tail = current.prev
         this.tail.next = undefined
