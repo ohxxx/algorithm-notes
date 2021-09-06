@@ -30,10 +30,10 @@
 - [x] 散列表 [`Docs`](./first-stage/hash-table/README.md)
 - [x] 递归 [`Docs`](./first-stage/recursive/README.md)
 - [x] 树 [`Docs`](./first-stage/tree/README.md)
-- [x] 二查堆和堆排序
-- [x] 图
-- [x] 排序和搜索算法
-- [x] 算法设计与技巧
+- [x] 二查堆和堆排序 [`Docs`](./first-stage/heap/README.md)
+- [x] 图 [`Docs`](./first-stage/graph/README.md)
+- [x] 排序和搜索算法 [`Docs`](./first-stage/sorting-search-algorithm/README.md)
+- [x] 算法设计与技巧 [`Docs`](./first-stage/algorithm-design/README.md)
 
 **基础点实践**
 
@@ -41,7 +41,7 @@
 - [x] 队列和双端队列
 - [x] 链表
 - [x] 集合
-- [ ] 字典
+- [x] 字典
 - [ ] 散列表
 - [ ] 递归
 - [ ] 树
