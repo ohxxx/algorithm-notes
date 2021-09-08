@@ -113,17 +113,16 @@ class HashTable {
 // test
 const xxx = new HashTable()
 
-console.log(xxx.loseloseHashCode('xxx'));
+xxx.put('小明', 'xxx111')
+xxx.put('小丽', 'xxx222')
+xxx.put('大明', 'xxx333')
+xxx.put('大丽', 'xxx444')
+// xxx.put(123, 'xxx3')
 
-xxx.put('xxx', 123)
-xxx.put('xxx', 'xxx1')
-xxx.put('123', 'xxx2')
-xxx.put(123, 'xxx3')
+console.log('get = ', xxx.get('大丽'));
+console.log('get = ', xxx.get('小明'));
 
-console.log('get = ', xxx.get(111));
-console.log('get = ', xxx.get("123"));
-
-xxx.remove(123)
+xxx.remove(2)
 
 
 console.log(xxx);
