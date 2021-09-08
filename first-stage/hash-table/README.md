@@ -46,16 +46,19 @@ get(key) 返回根据键值检索到的特定的值
 
 > 线性探查也称作线性，是因为它处理冲突的方式是将元素直接存储到表中，而不是在单独的数据结构中。线性探查法在向散列表中插入元素时，如果插入位置 position 已经被占据，就尝试插入 position+1 的位置，以此类推，直到找到空的位置。
 
-**线性探查(软删除)**
-![image](./assets/3.png)
-
-**[`HashTableLinearProbing Demo`](./hash-table-linear-probing.js)**
-
-**线性探查(惰性删除)**
+**线性探查(移动删除)**
 
 > 需要检验是否有必要讲一个或多个元素移动到之前的位置。当搜索一个键的时候，这种方法可以避免找到一个空位置，如果移动元素是必要的，我们就需要在散列表中挪动键值对。
 
 ![image](./assets/4.png)
+
+**[`HashTableLinearProbing Demo`](./hash-table-linear-probing.js)**
+
+**线性探查(软删除/惰性删除)**
+
+> 使用一个特殊的值（标记）来表示键值对被删除了，而不是真正的删除。还存在散列表中
+
+![image](./assets/3.png)
 
 **[`HashTableLinearProbingLazy Demo`](./hash-table-linear-probing-lazy.js)**
 
