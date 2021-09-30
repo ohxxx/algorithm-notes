@@ -43,18 +43,22 @@ remove(key) 从树中移除某个键
 
 **先序遍历**
 
-> 先序遍历（NLR - Preorder Traverse），访问根节点的操作发生在遍历其左右子树之前。是以优先于后代节点的顺序访问每个节点，先序遍历的一种应用是打印一个结构化的文档
+> 先序遍历（NLR - Preorder Traverse），访问根节点的操作发生在遍历其左右子树之前。是`以优先于后代节点的顺序访问每个节点`，先序遍历的一种应用是打印一个结构化的文档
 > 具体实现看`BinarySearchTree Demo`中的`preOrderTraverse`函数
+>
+> > ![image](./assets/14.png)
 
 **中序遍历**
 
-> 中序遍历（LNR - Inorder Traverse），访问根节点的操作发生在遍历其左右子树之间。是一种以上行顺序访问 BST 所有节点的遍历方式，也就是以最小到最大的顺序访问所有节点。中序遍历的一种应用就是对树进行排序操作。
+> 中序遍历（LNR - Inorder Traverse），访问根节点的操作发生在遍历其左右子树之间。是一种以上行顺序访问 BST 所有节点的遍历方式，也就是`以最小到最大的顺序访问所有节点`。中序遍历的一种应用就是对树进行排序操作。
 > 具体实现看`BinarySearchTree Demo`中的`inOrderTraverse`函数
+> ![image](./assets/13.png)
 
 **后序遍历**
 
-> 后序遍历（LRN - Postorder Traverse），访问根节点的操作发生在其左右子树之后，是先访问节点的后代节点，再访问节点本身。后序遍历的一种应用是计算一个目录及其子目录中所有文件所占空间的大小
+> 后序遍历（LRN - Postorder Traverse），访问根节点的操作发生在其左右子树之后，是`先访问节点的后代节点，再访问节点本身`。后序遍历的一种应用是计算一个目录及其子目录中所有文件所占空间的大小
 > 具体实现看`BinarySearchTree Demo`中的`postOrderTraverse`函数
+> ![image](./assets/15.png)
 
 ### 自平衡树
 
