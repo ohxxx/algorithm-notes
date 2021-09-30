@@ -180,6 +180,7 @@ class BinarySearchTree {
 
       /**
        * 第三种情况：要移除的节点有两个子节点
+       * 找到右侧子树中最小节点，移除，并替换掉删除的节点
        */
       const aux = this.minNode(node.right)
       node.key = aux.key
