@@ -222,4 +222,143 @@ class AVLTree extends BinarySearchTree {
         return BalanceFactor.BALANCED;
     }
   }
+
+  // 左-左（LL - left-left）：向右的单旋转
+  /**
+   *
+   *       b                           a
+   *      / \                         / \
+   *     a   e -> rotationLL(b) ->   c   b
+   *    / \                             / \
+   *   c   d                           d   e
+   *
+   */
+  rotationLL(node) {
+    const temp = node.left
+    node.left = temp.right
+    temp.right = node
+    return temp
+  }
+
+  // 右-右（RR - right-right）：向左的单旋转
+  /**
+   *
+   *     a                              b
+   *    / \                            / \
+   *   c   b   -> rotationRR(a) ->    a   e
+   *      / \                        / \
+   *     d   e                      c   d
+   *
+   */
+  rotationRR(node) {
+    const temp = node.right
+    node.right = temp.left
+    temp.left = node
+    return temp
+  }
+
+  // 左-右（LR - left-right）：向右的双旋转（先 RR 旋转，再 LL 旋转）
+  rotationLR(node) {
+    node.left = this.rotationRR(node.left)
+    return this.rotationLL(node)
+  }
+
+  // 右-左（RL - right-left）：向左的双旋转（先 LL 旋转，再 RR 旋转）
+  rotationRL(node) {
+    node.right = this.rotationLL(node.right)
+    return this.rotationRR(node)
+  }
+
+  // 插入
+  insert(key) {
+    this.root = this.insertNode(this.root, key)
+  }
+
+  // 重写插入
+  insertNode(node, key) {
+    if (!node) {
+      return new Node(key)
+    } else if (this.compareFn(key, node.key) === Compare.LESS_THAN) { // 左侧插入
+      node.left = this.insertNode(node.left, key)
+    } else if (this.compareFn(key, node.key) === Compare.BIGGER_THAN) { // 右侧插入
+      node.right = this.insertNode(node.right, key)
+    } else {
+      return node // 重复的key
+    }
+
+    // 以下进行平衡操作
+
+    // 获取以每个插入树的节点为根的节点的平衡因子
+    const balanceFactor = this.getBalanceFactor(node)
+    // 在左侧子树插入节点后不平衡了
+    if (balanceFactor === BalanceFactor.UNBALANCED_LEFT) {
+      // 插入的键小于左侧子节点的键
+      if (this.compareFn(key, node.left.key) === Compare.LESS_THAN) {
+        node = this.rotationLL(node)
+      } else {
+        return this.rotationLR(node)
+      }
+    }
+
+    // 在右侧子树插入节点后不平衡了
+    if (balanceFactor === BalanceFactor.UNBALANCED_RIGHT) {
+      // 插入的键大于右侧子节点的键
+      if (this.compareFn(key, node.right.key) === Compare.BIGGER_THAN) {
+        node = this.rotationRR(node)
+      } else {
+        return this.rotationRL(node)
+      }
+    }
+
+    return node
+  }
+
+  // 重写删除
+  removeNode(node, key) {
+    node = super.removeNode(node, key)
+    if (!node) return node; // 不需要平衡 
+
+    // 以下进行平衡处理
+
+    // 检查是否需要平衡处理
+    const balanceFactor = this.getBalanceFactor(node)
+    if (balanceFactor === BalanceFactor.UNBALANCED_LEFT) {
+      if (
+        this.getBalanceFactor(node.left) === BalanceFactor.BALANCED ||
+        this.getBalanceFactor(node.left) === BalanceFactor.SLIGHTLY_UNBALANCED_LEFT
+      ) {
+        return this.rotationLL(node)
+      }
+      if (this.getBalanceFactor(node.left) === BalanceFactor.SLIGHTLY_UNBALANCED_RIGHT) {
+        return this.rotationLR(node.left)
+      }
+    }
+    if (balanceFactor === BalanceFactor.UNBALANCED_RIGHT) {
+      if (
+        this.getBalanceFactor(node.right) === BalanceFactor.BALANCED ||
+        this.getBalanceFactor(node.right) === BalanceFactor.SLIGHTLY_UNBALANCED_RIGHT
+      ) {
+        return this.rotationRR(node)
+      }
+      if (this.getBalanceFactor(node.right) === BalanceFactor.SLIGHTLY_UNBALANCED_LEFT) {
+        return this.rotationRL(node.right)
+      }
+    }
+
+    return node
+  }
 }
+
+// test
+// const xxx = new BinarySearchTree()
+const xxx = new AVLTree()
+xxx.insert(11)
+xxx.insert(7)
+xxx.insert(15)
+xxx.insert(5)
+xxx.insert(9)
+xxx.insert(8)
+
+xxx.remove(9)
+
+console.log(JSON.stringify(xxx));
