@@ -89,10 +89,10 @@ remove(key) 从树中移除某个键
 - 右-右（RR - right-right）：向左的单旋转
   > 新添加的节点位于树的根节点的右子树的右子树上。以非平衡因子的节点为中心将整棵树向左旋转。
   > ![image](./assets/4.png)
-- 左-右（LR - left-right）：向右的双旋转（先 LL 旋转，再 RR 旋转）
+- 左-右（LR - left-right）：向右的双旋转（先 RR 旋转，再 LL 旋转）
   > 新添加的节点位于树的根节点的左子树的右子树上。先执行 RR 旋转，然后再执行 LL 旋转。
   > ![image](./assets/5.png)
-- 右-左（RL - right-left）：向左的双旋转（先 RR 旋转，再 LL 旋转）
+- 右-左（RL - right-left）：向左的双旋转（先 LL 旋转，再 RR 旋转）
   > 新添加的节点位于树的根节点的右子树的左子树上。先执行 LL 旋转，然后再执行 RR 旋转。
   > ![image](./assets/6.png)
 
