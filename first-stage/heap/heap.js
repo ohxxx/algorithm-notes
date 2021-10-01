@@ -11,11 +11,8 @@ function defaultCompare(a, b) {
   return a < b ? Compare.LESS_THAN : Compare.BIGGER_THAN;
 }
 
-function reverseCompare(a, b) {
-  if (a === b) {
-    return 0;
-  }
-  return a < b ? Compare.BIGGER_THAN : Compare.LESS_THAN;
+function reverseCompare(compareFn) {
+  return (a, b) => compareFn(b, a)
 }
 
 function swap(array, a, b) {
@@ -125,16 +122,41 @@ class MinHeap {
 }
 
 // test MinHeap
-const xxx = new MinHeap()
+// const xxx = new MinHeap()
+
+// xxx.insert(2)
+// xxx.insert(3)
+// xxx.insert(4)
+// xxx.insert(5)
+// xxx.insert(1)
+
+// console.log(xxx);
+
+// xxx.extract()
+
+// console.log(xxx);
+
+/******************************************
+*                                         *
+*                MaxHeap                  *
+*                                         *
+******************************************/
+class MaxHeap extends MinHeap {
+  constructor(compareFn = defaultCompare) {
+    super(compareFn);
+    this.compareFn = reverseCompare(compareFn);
+  }
+}
+
+// test MaxHeap
+const xxx = new MaxHeap()
 
 xxx.insert(2)
 xxx.insert(3)
 xxx.insert(4)
 xxx.insert(5)
+
 xxx.insert(1)
 
 console.log(xxx);
 
-xxx.extract()
-
-console.log(xxx);
