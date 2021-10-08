@@ -54,10 +54,20 @@
 
 **广度优先搜索**
 
+> 算法口诀
+> 1、访问根节点
+> 2、对根节点的`没有访问过的相邻节点`挨个进行深度优先遍历
+
 **[`BreadthFirstSearch Demo`](./breadth-first-search.js)**
 ![image](./assets/5.png)
 
 **深度优先搜索**
+
+> 算法口诀
+> 1、把根节点入队
+> 2、把队头出队并访问
+> 3、把队头的`没有访问过的相邻节点`入队
+> 4、重复 2，3 步，直到队列为空
 
 **[`DepthFirstSearch Demo`](./depth-first-search.js)**
 ![image](./assets/6.png)
