@@ -58,19 +58,21 @@ class Queue {
 
 }
 
+module.exports = Queue
+
 // test
-const xxx = new Queue()
-xxx.enqueue('111')
-xxx.enqueue('222')
-xxx.enqueue('333')
-console.log('dequeue', xxx.dequeue());
-console.log('peek', xxx.peek());
-console.log('size', xxx.size());
-console.log('toString', xxx.toString());
+// const xxx = new Queue()
+// xxx.enqueue('111')
+// xxx.enqueue('222')
+// xxx.enqueue('333')
+// console.log('dequeue', xxx.dequeue());
+// console.log('peek', xxx.peek());
+// console.log('size', xxx.size());
+// console.log('toString', xxx.toString());
 
-setTimeout(() => {
-  xxx.clear()
-  console.log(xxx);
-}, 1000)
+// setTimeout(() => {
+//   xxx.clear()
+//   console.log(xxx);
+// }, 1000)
 
-console.log(xxx);
+// console.log(xxx);
