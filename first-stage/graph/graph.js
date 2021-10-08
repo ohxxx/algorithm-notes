@@ -162,23 +162,25 @@ class Graph {
   }
 }
 
+module.exports = Graph
+
 // test
-const xxx = new Graph()
+// const xxx = new Graph()
 
-const vertices = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
-for (let i = 0; i < vertices.length; i++) {
-  xxx.addVertex(vertices[i])
-}
+// const vertices = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
+// for (let i = 0; i < vertices.length; i++) {
+//   xxx.addVertex(vertices[i])
+// }
 
-xxx.addEdge('A', 'B')
-xxx.addEdge('A', 'C')
-xxx.addEdge('A', 'D')
-xxx.addEdge('C', 'D')
-xxx.addEdge('C', 'G')
-xxx.addEdge('D', 'G')
-xxx.addEdge('D', 'H')
-xxx.addEdge('B', 'E')
-xxx.addEdge('B', 'F')
-xxx.addEdge('E', 'I')
+// xxx.addEdge('A', 'B')
+// xxx.addEdge('A', 'C')
+// xxx.addEdge('A', 'D')
+// xxx.addEdge('C', 'D')
+// xxx.addEdge('C', 'G')
+// xxx.addEdge('D', 'G')
+// xxx.addEdge('D', 'H')
+// xxx.addEdge('B', 'E')
+// xxx.addEdge('B', 'F')
+// xxx.addEdge('E', 'I')
 
-console.log(xxx.toString());
+// console.log(xxx.toString());
