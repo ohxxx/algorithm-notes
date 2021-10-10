@@ -16,12 +16,12 @@ const swap = (array, a, b) => {
   [array[a], array[b]] = [array[b], array[a]];
 }
 
-const bubbleSort = (array, compareFn = defaultCompare) => {
-  const { length } = array
+const modifiedBubbleSort = (array, compareFn = defaultCompare) => {
+  const { length } = array;
   for (let i = 0; i < length; i++) {
-    for (let j = 0; j < length - 1; j++) {
+    for (let j = 0; j < length - 1 - i; j++) {
       if (compareFn(array[j], array[j + 1]) === Compare.BIGGER_THAN) {
-        swap(array, j, j + 1);
+        swap(array, j, j + 1)
       }
     }
   }
@@ -31,6 +31,6 @@ const bubbleSort = (array, compareFn = defaultCompare) => {
 // test
 const arr = [5, 4, 3, 2, 1]
 
-console.log('冒泡排序前 = ', arr);
-bubbleSort(arr)
-console.log('冒泡排序后 = ', arr);
+console.log('冒泡排序（优化）前 = ', arr);
+modifiedBubbleSort(arr)
+console.log('冒泡排序（优化）后 = ', arr);
