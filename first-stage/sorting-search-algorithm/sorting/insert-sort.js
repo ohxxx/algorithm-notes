@@ -26,9 +26,10 @@ const insertionSort = (array, compareFn = defaultCompare) => {
   return array
 }
 
+module.exports = insertionSort
 // test
-const arr = [5, 4, 3, 2, 1]
+// const arr = [5, 4, 3, 2, 1]
 
-console.log('插入排序前 = ', arr);
-insertionSort(arr)
-console.log('插入排序后 = ', arr);
+// console.log('插入排序前 = ', arr);
+// insertionSort(arr)
+// console.log('插入排序后 = ', arr);
