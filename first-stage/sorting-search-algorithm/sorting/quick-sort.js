@@ -55,9 +55,11 @@ const quickSort = (array, compareFn = defaultCompare) => {
   return quick(array, 0, array.length - 1, compareFn);
 }
 
-// test
-const arr = [5, 4, 3, 2, 1]
+module.exports = quickSort
 
-console.log('快速排序前 = ', arr);
-quickSort(arr)
-console.log('快速排序后 = ', arr);
+// test
+// const arr = [5, 4, 3, 2, 1]
+
+// console.log('快速排序前 = ', arr);
+// quickSort(arr)
+// console.log('快速排序后 = ', arr);
