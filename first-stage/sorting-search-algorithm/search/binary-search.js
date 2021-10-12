@@ -15,7 +15,7 @@ const binarySearch = (array, value) => {
       return mid;
     }
   }
-  return DOES_NOT_EXIST;
+  return -1;
 }
 
 // test
