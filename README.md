@@ -86,6 +86,7 @@
 
 #### 树
 
+- [`leetcode#111. 二叉树的最小深度`](./second-stage/tree/leetcode111.md)
 - [`go on...`]()
 
 #### 堆
