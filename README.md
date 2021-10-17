@@ -152,6 +152,7 @@
 
 **分而治之**
 
+- [`leetcode#374. 猜数字大小`](./second-stage/algorithm-design/devide-and-conquer/leetcode374.md)
 - [`go on...`]()
 
 **动态规划**
