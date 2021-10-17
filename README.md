@@ -80,6 +80,8 @@
 
 #### 递归
 
+- [`leetcode#206. 反转链表`](./second-stage/recursive/leetcode206.md)
+
 - [`go on...`]()
 
 #### 树
