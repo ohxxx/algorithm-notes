@@ -66,11 +66,12 @@
 
 #### 集合
 
-- [`leetcode#349.两个数组的交集`](./second-stage/linked-list/leetcode349.md)
+- [`leetcode#349.两个数组的交集`](./second-stage/set/leetcode349.md)
 - [`go on...`]()
 
 #### 字典
 
+- [`leetcode#1.两数之和`](./second-stage/dictionary/leetcode1.md)
 - [`go on...`]()
 
 #### 散列表
