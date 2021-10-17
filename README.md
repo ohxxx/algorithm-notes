@@ -88,8 +88,9 @@
 
 - [`go on...`]()
 
-#### 二查堆和堆排序
+#### 堆
 
+- [`leetcode#215. 数组中的第 K 个最大元素`](./second-stage/heap/leetcode215.md)
 - [`go on...`]()
 
 #### 图
