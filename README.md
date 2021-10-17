@@ -52,110 +52,113 @@
 - [`leetcode#232.用栈实现队列`](./second-stage/stack/leetcode#232.md)
 - [`leetcode#678.有效的括号字符串`](./second-stage/stack/leetcode#678.md)
 - [`leetcode#682.棒球比赛`](./second-stage/stack/leetcode#682.md)
+- [`go on...`]()
 
 #### 队列和双端队列
 
 - [`leetcode#933.最近的请求次数`](./second-stage/queue/leetcode#933.md)
+- [`go on...`]()
 
 #### 链表
 
-- [`todo`]()
+- [`leetcode#237.删除链表中的节点`](./second-stage/linked-list/leetcode#237.md)
+- [`go on...`]()
 
 #### 集合
 
-- [`todo`]()
+- [`go on...`]()
 
 #### 字典
 
-- [`todo`]()
+- [`go on...`]()
 
 #### 散列表
 
-- [`todo`]()
+- [`go on...`]()
 
 #### 递归
 
-- [`todo`]()
+- [`go on...`]()
 
 #### 树
 
-- [`todo`]()
+- [`go on...`]()
 
 #### 二查堆和堆排序
 
-- [`todo`]()
+- [`go on...`]()
 
 #### 图
 
-- [`todo`]()
+- [`go on...`]()
 
 #### 排序和搜索算法
 
 **冒泡排序**
 
-- [`todo`]()
+- [`go on...`]()
 
 **选择排序**
 
-- [`todo`]()
+- [`go on...`]()
 
 **插入排序**
 
-- [`todo`]()
+- [`go on...`]()
 
 **归并排序**
 
-- [`todo`]()
+- [`go on...`]()
 
 **快速排序**
 
-- [`todo`]()
+- [`go on...`]()
 
 **计数排序**
 
-- [`todo`]()
+- [`go on...`]()
 
 **桶排序**
 
-- [`todo`]()
+- [`go on...`]()
 
 **基数排序**
 
-- [`todo`]()
+- [`go on...`]()
 
 **桶排序**
 
-- [`todo`]()
+- [`go on...`]()
 
 **顺序搜索**
 
-- [`todo`]()
+- [`go on...`]()
 
 **二分搜索**
 
-- [`todo`]()
+- [`go on...`]()
 
 **内插搜索**
 
-- [`todo`]()
+- [`go on...`]()
 
 #### 算法设计与技巧
 
 **分而治之**
 
-- [`todo`]()
+- [`go on...`]()
 
 **动态规划**
 
-- [`todo`]()
+- [`go on...`]()
 
 **贪心算法**
 
-- [`todo`]()
+- [`go on...`]()
 
 **回溯算法**
 
-- [`todo`]()
+- [`go on...`]()
 
 ---
 
