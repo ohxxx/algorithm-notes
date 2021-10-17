@@ -66,6 +66,7 @@
 
 #### 集合
 
+- [`leetcode#349.两个数组的交集`](./second-stage/linked-list/leetcode349.md)
 - [`go on...`]()
 
 #### 字典
