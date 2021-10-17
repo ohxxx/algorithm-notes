@@ -47,21 +47,21 @@
 
 #### 栈
 
-- [`leetcode#20.有效的括号`](./second-stage/stack/leetcode#20.md)
-- [`leetcode#155.最小栈`](./second-stage/stack/leetcode#155.md)
-- [`leetcode#232.用栈实现队列`](./second-stage/stack/leetcode#232.md)
-- [`leetcode#678.有效的括号字符串`](./second-stage/stack/leetcode#678.md)
-- [`leetcode#682.棒球比赛`](./second-stage/stack/leetcode#682.md)
+- [`leetcode#20.有效的括号`](./second-stage/stack/leetcode20.md)
+- [`leetcode#155.最小栈`](./second-stage/stack/leetcode155.md)
+- [`leetcode#232.用栈实现队列`](./second-stage/stack/leetcode232.md)
+- [`leetcode#678.有效的括号字符串`](./second-stage/stack/leetcode678.md)
+- [`leetcode#682.棒球比赛`](./second-stage/stack/leetcode682.md)
 - [`go on...`]()
 
 #### 队列和双端队列
 
-- [`leetcode#933.最近的请求次数`](./second-stage/queue/leetcode#933.md)
+- [`leetcode#933.最近的请求次数`](./second-stage/queue/leetcode933.md)
 - [`go on...`]()
 
 #### 链表
 
-- [`leetcode#237.删除链表中的节点`](./second-stage/linked-list/leetcode#237.md)
+- [`leetcode#237.删除链表中的节点`](./second-stage/linked-list/leetcode237.md)
 - [`go on...`]()
 
 #### 集合
