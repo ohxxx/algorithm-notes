@@ -157,6 +157,7 @@
 
 **动态规划**
 
+- [`leetcode#70. 爬楼梯`](./second-stage/algorithm-design/dynamic-programming/leetcode70.md)
 - [`go on...`]()
 
 **贪心算法**
