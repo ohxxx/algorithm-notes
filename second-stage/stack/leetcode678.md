@@ -107,10 +107,37 @@ var checkValidString = function (s) {
 **官方**
 
 ```js
-官方暂未给出使用栈的方法，因为使用动态规划和贪心算法是最快的最好的，
-等后面学到了添加进去
+var checkValidString = function (s) {
+  const leftStack = [];
+  const asteriskStack = [];
+  const n = s.length;
+  for (let i = 0; i < n; i++) {
+    const c = s[i];
+    if (c === "(") {
+      leftStack.push(i);
+    } else if (c === "*") {
+      asteriskStack.push(i);
+    } else {
+      if (leftStack.length) {
+        leftStack.pop();
+      } else if (asteriskStack.length) {
+        asteriskStack.pop();
+      } else {
+        return false;
+      }
+    }
+  }
+  while (leftStack.length && asteriskStack.length) {
+    const leftIndex = leftStack.pop();
+    const asteriskIndex = asteriskStack.pop();
+    if (leftIndex > asteriskIndex) {
+      return false;
+    }
+  }
+  return leftStack.length === 0;
+};
 ```
 
 **官方-复杂度分析**  
-`时间复杂度`：xxx  
-`空间复杂度`：xxx
+`时间复杂度`：O(n)，其中 n 是字符串 s 的长度。需要遍历字符串一次，遍历过程中每个字符的操作时间都是 O(1)，遍历结束之后对左括号栈和星号栈弹出元素的操作次数不会超过 n。  
+`空间复杂度`：O(n)，其中 n 是字符串 s 的长度。空间复杂度主要取决于左括号栈和星号栈，两个栈的元素总数不会超过 n。

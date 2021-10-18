@@ -94,14 +94,39 @@ var calPoints = function (ops) {
 
 **实现-复杂度分析**  
 `时间复杂度`：O(n)，即 ops 的长度  
-`空间复杂度`：O(n)，即 stack 的长度  
+`空间复杂度`：O(n)，即 stack 的长度
 
 **官方**
 
-```js
-暂无;
+```java
+// java
+class Solution {
+  public int calPoints(String[] ops) {
+    Stack<Integer> stack = new Stack();
+
+    for(String op : ops) {
+      if (op.equals("+")) {
+        int top = stack.pop();
+        int newtop = top + stack.peek();
+        stack.push(top);
+        stack.push(newtop);
+      } else if (op.equals("C")) {
+        stack.pop();
+      } else if (op.equals("D")) {
+        stack.push(2 * stack.peek());
+      } else {
+        stack.push(Integer.valueOf(op));
+      }
+    }
+
+    int ans = 0;
+    for(int score : stack) ans += score;
+    return ans;
+  }
+}
+
 ```
 
 **官方-复杂度分析**  
-`时间复杂度`：暂无  
-`空间复杂度`：暂无
+`时间复杂度`：O(n)，其中 n 是 ops 的长度。我们解析给定数组中的每个元素，然后每个元素执行 O(1) 的工作。  
+`空间复杂度`：O(n)，用于存储 stack 的空间。
