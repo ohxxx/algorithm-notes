@@ -57,6 +57,7 @@
 #### 队列和双端队列
 
 - [`leetcode#933.最近的请求次数`](./second-stage/queue/leetcode933.md)
+- [`leetcode#225. 用队列实现栈`](./second-stage/queue/leetcode225.md)
 - [`go on...`]()
 
 #### 链表
