@@ -37,7 +37,7 @@ var intersection = function (nums1, nums2) {
 ```
 
 **实现-复杂度分析**  
-`时间复杂度`：O(n \* m) = O(n^2)，因为有 filter 和 include 循环
+`时间复杂度`：O(n \* m) = O(n^2)，因为有 filter 和 include 循环  
 `空间复杂度`：O(n)，n 代表 new Set 去重后的数组的长度
 
 **官方**
