@@ -57,15 +57,16 @@
 #### 队列和双端队列
 
 - [`leetcode#933.最近的请求次数`](./second-stage/queue/leetcode933.md)
-- [`leetcode#225. 用队列实现栈`](./second-stage/queue/leetcode225.md)
-- [`leetcode#346. 数据流中的移动平均值`](./second-stage/queue/leetcode346.md)
-- [`leetcode#387. 字符串中的第一个唯一字符`](./second-stage/queue/leetcode387.md)
-- [`leetcode# 1700. 无法吃午餐的学生数量`](./second-stage/queue/leetcode1700.md)
+- [`leetcode#225.用队列实现栈`](./second-stage/queue/leetcode225.md)
+- [`leetcode#346.数据流中的移动平均值`](./second-stage/queue/leetcode346.md)
+- [`leetcode#387.字符串中的第一个唯一字符`](./second-stage/queue/leetcode387.md)
+- [`leetcode# 1700.无法吃午餐的学生数量`](./second-stage/queue/leetcode1700.md)
 - [`go on...`]()
 
 #### 链表
 
 - [`leetcode#237.删除链表中的节点`](./second-stage/linked-list/leetcode237.md)
+- [`leetcode#206.反转链表`](./second-stage/linked-list/leetcode206.md)
 - [`go on...`]()
 
 #### 集合
@@ -84,18 +85,18 @@
 
 #### 递归
 
-- [`leetcode#206. 反转链表`](./second-stage/recursive/leetcode206.md)
+- [`leetcode#206.反转链表`](./second-stage/recursive/leetcode206.md)
 
 - [`go on...`]()
 
 #### 树
 
-- [`leetcode#111. 二叉树的最小深度`](./second-stage/tree/leetcode111.md)
+- [`leetcode#111.二叉树的最小深度`](./second-stage/tree/leetcode111.md)
 - [`go on...`]()
 
 #### 堆
 
-- [`leetcode#215. 数组中的第 K 个最大元素`](./second-stage/heap/leetcode215.md)
+- [`leetcode#215.数组中的第 K 个最大元素`](./second-stage/heap/leetcode215.md)
 - [`go on...`]()
 
 #### 图
@@ -156,12 +157,12 @@
 
 **分而治之**
 
-- [`leetcode#374. 猜数字大小`](./second-stage/algorithm-design/devide-and-conquer/leetcode374.md)
+- [`leetcode#374.猜数字大小`](./second-stage/algorithm-design/devide-and-conquer/leetcode374.md)
 - [`go on...`]()
 
 **动态规划**
 
-- [`leetcode#70. 爬楼梯`](./second-stage/algorithm-design/dynamic-programming/leetcode70.md)
+- [`leetcode#70.爬楼梯`](./second-stage/algorithm-design/dynamic-programming/leetcode70.md)
 - [`go on...`]()
 
 **贪心算法**
