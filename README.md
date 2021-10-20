@@ -67,6 +67,7 @@
 
 - [`leetcode#237.删除链表中的节点`](./second-stage/linked-list/leetcode237.md)
 - [`leetcode#206.反转链表`](./second-stage/linked-list/leetcode206.md)
+- [`leetcode#160.相交链表`](./second-stage/linked-list/leetcode160.md)
 - [`go on...`]()
 
 #### 集合
