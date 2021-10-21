@@ -69,6 +69,7 @@
 - [`leetcode#206.反转链表`](./second-stage/linked-list/leetcode206.md)
 - [`leetcode#160.相交链表`](./second-stage/linked-list/leetcode160.md)
 - [`leetcode#234.回文链表`](./second-stage/linked-list/leetcode234.md)
+- [`leetcode#203.移除链表元素`](./second-stage/linked-list/leetcode203.md)
 - [`go on...`]()
 
 #### 集合
