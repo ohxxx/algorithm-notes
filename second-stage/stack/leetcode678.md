@@ -102,7 +102,7 @@ var checkValidString = function (s) {
 
 **实现-复杂度分析**  
 `时间复杂度`：O(n)，即 for 循环  
-`空间复杂度`：O(2n)，即 stack 与 starStack 的长度
+`空间复杂度`：O(n)，即 stack 与 starStack 的长度
 
 **官方**
 

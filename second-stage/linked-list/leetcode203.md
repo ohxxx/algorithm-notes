@@ -70,6 +70,9 @@ var removeElements = function (head, val) {
 **官方**
 
 ```js
+/**
+ * 使用递归
+ */
 var removeElements = function (head, val) {
   if (head === null) {
     return head;

@@ -102,7 +102,7 @@ var findKthLargest = function (nums, k) {
 ```
 
 **实现-复杂度分析**  
-`时间复杂度`：O(n\*log(k))，因为有个 for 循环 n，而且 inset 和 pop 是个递归操作，所以是循环套循环，所以 log(k)，k 是堆大小  
+`时间复杂度`：O(nlog(k))，因为有个 for 循环 n，而且 inset 和 pop 是个递归操作，所以是循环套循环，所以 log(k)，k 是堆大小  
 `空间复杂度`：O(k)，k 就是参数 k，维护的堆的大小
 
 **官方**
@@ -151,5 +151,5 @@ class Solution {
 ```
 
 **官方-复杂度分析**  
-`时间复杂度`：O(nlogn)，建堆的时间代价是 O(n)，删除的总代价是 O(klogn)，因为 k < n，故渐进时间复杂为 O(n+klogn) = O(nlogn)。  
-`空间复杂度`：O(logn)，即递归使用栈空间的空间代价。
+`时间复杂度`：O(nlog(n))，建堆的时间代价是 O(n)，删除的总代价是 O(klog(n))，因为 k < n，故渐进时间复杂为 O(n+klog(n)) = O(nlog(n))。  
+`空间复杂度`：O(log(n))，即递归使用栈空间的空间代价。
