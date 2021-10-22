@@ -75,6 +75,7 @@
 #### 集合
 
 - [`leetcode#349.两个数组的交集`](./second-stage/set/leetcode349.md)
+- [`leetcode#1507.转变日期格式`](./second-stage/set/leetcode1507.md)
 - [`go on...`]()
 
 #### 字典
