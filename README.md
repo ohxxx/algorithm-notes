@@ -36,7 +36,7 @@
 - [x] 树 [`Docs & Example`](./first-stage/tree/README.md)
 - [x] 二查堆和堆排序 [`Docs & Example`](./first-stage/heap/README.md)
 - [x] 图 [`Docs & Example`](./first-stage/graph/README.md)
-- [x] 排序和搜索算法 [`Docs & Example`](./first-stage/sorting-search-algorithm/README.md)
+- [x] 排序和搜索算法 [`排序算法 Docs & Example`](./first-stage/sorting-search-algorithm/sorting/README.md) [`搜索算法 Docs & Example`](./first-stage/sorting-search-algorithm/search/README.md)
 - [x] 算法设计与技巧 [`Docs & Example`](./first-stage/algorithm-design/README.md)
 
 ---
