@@ -85,7 +85,7 @@
 - [`leetcode#1.两数之和`](./second-stage/dictionary/leetcode1.md)
 - [`go on...`]()
 
-#### 散列表
+#### 散列表/哈希表
 
 - [`go on...`]()
 
@@ -98,6 +98,7 @@
 #### 树
 
 - [`leetcode#111.二叉树的最小深度`](./second-stage/tree/leetcode111.md)
+- [`leetcode#100.相同的树`](./second-stage/tree/leetcode100.md)
 - [`go on...`]()
 
 #### 堆
