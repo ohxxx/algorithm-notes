@@ -70,6 +70,7 @@
 - [`leetcode#160.相交链表`](./second-stage/linked-list/leetcode160.md)
 - [`leetcode#234.回文链表`](./second-stage/linked-list/leetcode234.md)
 - [`leetcode#203.移除链表元素`](./second-stage/linked-list/leetcode203.md)
+- [`leetcode#83.删除排序链表中的重复元素`](./second-stage/linked-list/leetcode83.md)
 - [`go on...`]()
 
 #### 集合
