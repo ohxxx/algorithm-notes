@@ -87,6 +87,8 @@
 
 #### 散列表/哈希表
 
+- [`leetcode#217.存在重复元素`](./second-stage/hash-table/leetcode217.md)
+
 - [`go on...`]()
 
 #### 递归
