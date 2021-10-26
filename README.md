@@ -89,6 +89,7 @@
 
 - [`leetcode#217.存在重复元素`](./second-stage/hash-table/leetcode217.md)
 - [`leetcode#13.罗马数字转整数`](./second-stage/hash-table/leetcode13.md)
+- [`leetcode#141.环形链表`](./second-stage/hash-table/leetcode141.md)
 - [`go on...`]()
 
 #### 递归
