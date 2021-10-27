@@ -83,6 +83,7 @@
 #### 字典
 
 - [`leetcode#1.两数之和`](./second-stage/dictionary/leetcode1.md)
+- [`剑指Offer#03.数组中重复的数字`](./second-stage/dictionary/剑指Offer03.md)
 - [`go on...`]()
 
 #### 散列表/哈希表
