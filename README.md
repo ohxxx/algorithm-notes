@@ -113,6 +113,7 @@
 #### 图
 
 - [`leetcode#1791.找出星型图的中心节点`](./second-stage/graph/leetcode1791.md)
+- [`leetcode#997.找到小镇的法官`](./second-stage/graph/leetcode997.md)
 - [`go on...`]()
 
 #### 排序和搜索算法
