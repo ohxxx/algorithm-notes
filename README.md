@@ -126,6 +126,7 @@
 
 **选择排序**
 
+- [`leetcode#88.合并两个有序数组`](./second-stage/sorting-search-algorithm/sorting/selection-sort/leetcode88.md)
 - [`go on...`]()
 
 **插入排序**
