@@ -97,6 +97,7 @@
 
 - [`leetcode#206.反转链表`](./second-stage/recursive/leetcode206.md)
 - [`leetcode#101.对称二叉树`](./second-stage/recursive/leetcode101.md)
+- [`leetcode#21.合并两个有序链表`](./second-stage/recursive/leetcode21.md)
 - [`go on...`]()
 
 #### 树
