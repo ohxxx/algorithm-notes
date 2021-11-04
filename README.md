@@ -137,6 +137,7 @@
 **归并排序**
 
 - [`leetcode#148.排序链表`](./second-stage/sorting-search-algorithm/sorting/merge-sort/leetcode148.md)
+- [`leetcode#912.排序数组`](./second-stage/sorting-search-algorithm/sorting/merge-sort/leetcode912.md)
 - [`go on...`]()
 
 **快速排序**
