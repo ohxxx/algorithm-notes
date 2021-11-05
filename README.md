@@ -123,6 +123,7 @@
 
 **冒泡排序**
 
+- [`leetcode#912.排序数组`](./second-stage/sorting-search-algorithm/sorting/bubble-sort/leetcode912.md)
 - [`go on...`]()
 
 **选择排序**
