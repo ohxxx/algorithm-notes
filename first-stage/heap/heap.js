@@ -1,33 +1,10 @@
-const Compare = {
-  LESS_THAN: -1,
-  BIGGER_THAN: 1,
-  EQUALS: 0
-};
-
-function defaultCompare(a, b) {
-  if (a === b) {
-    return Compare.EQUALS;
-  }
-  return a < b ? Compare.LESS_THAN : Compare.BIGGER_THAN;
-}
-
-function reverseCompare(compareFn) {
-  return (a, b) => compareFn(b, a)
-}
-
-function swap(array, a, b) {
-  return [array[a], array[b]] = [array[b], array[a]];
-}
-
-
 /******************************************
 *                                         *
 *                MinHeap                  *
 *                                         *
 ******************************************/
 class MinHeap {
-  constructor(compareFn = defaultCompare) {
-    this.compareFn = compareFn
+  constructor() {
     this.heap = []
   }
 
@@ -56,6 +33,11 @@ class MinHeap {
     this.heap = []
   }
 
+  // 交换
+  swap(array, a, b) {
+    return [array[a], array[b]] = [array[b], array[a]];
+  }
+
   // 查找最小值
   findMinimum() {
     return this.isEmpty() ? undefined : this.heap[0]
@@ -76,9 +58,9 @@ class MinHeap {
     let parent = this.getParentIndex(index)
     while (
       index > 0 &&
-      this.compareFn(this.heap[parent], this.heap[index]) === Compare.BIGGER_THAN
+      this.heap[parent] > this.heap[index]
     ) {
-      swap(this.heap, parent, index)
+      this.swap(this.heap, parent, index)
       index = parent
       parent = this.getParentIndex(index)
     }
@@ -92,18 +74,18 @@ class MinHeap {
     const size = this.size()
     if (
       left < size &&
-      this.compareFn(this.heap[element], this.heap[left]) === Compare.BIGGER_THAN
+      this.heap[element] > this.heap[left]
     ) {
       element = left
     }
     if (
       right < size &&
-      this.compareFn(this.heap[element], this.heap[right]) === Compare.BIGGER_THAN
+      this.heap[element] > this.heap[right]
     ) {
       element = right
     }
     if (index !== element) {
-      swap(this.heap, index, element)
+      this.swap(this.heap, index, element)
       this.siftDown(element)
     }
   }
@@ -141,10 +123,102 @@ class MinHeap {
 *                MaxHeap                  *
 *                                         *
 ******************************************/
-class MaxHeap extends MinHeap {
-  constructor(compareFn = defaultCompare) {
-    super(compareFn);
-    this.compareFn = reverseCompare(compareFn);
+class MaxHeap {
+  constructor() {
+    this.heap = []
+  }
+
+  getLeftIndex(index) {
+    return 2 * index + 1
+  }
+
+  getRightIndex(index) {
+    return 2 * index + 2
+  }
+
+  getParentIndex(index) {
+    if (index === 0) return null;
+    return Math.floor((index - 1) / 2)
+  }
+
+  size() {
+    return this.heap.length
+  }
+
+  isEmpty() {
+    return this.size() <= 0
+  }
+
+  clear() {
+    this.heap = []
+  }
+
+  // 交换
+  swap(array, a, b) {
+    return [array[a], array[b]] = [array[b], array[a]];
+  }
+
+  // 查找最小值
+  findMinimum() {
+    return this.isEmpty() ? undefined : this.heap[0]
+  }
+
+  // 插入
+  insert(value) {
+    if (value) {
+      this.heap.push(value)
+      this.siftUp(this.heap.length - 1)
+      return true
+    }
+    return false
+  }
+
+  // 上移
+  siftUp(index) {
+    let parent = this.getParentIndex(index)
+    while (
+      index > 0 &&
+      this.heap[parent] < this.heap[index] // 区别
+    ) {
+      this.swap(this.heap, parent, index)
+      index = parent
+      parent = this.getParentIndex(index)
+    }
+  }
+
+  // 下移（堆化）
+  siftDown(index) {
+    let element = index
+    const left = this.getLeftIndex(index)
+    const right = this.getRightIndex(index)
+    const size = this.size()
+    if (
+      left < size &&
+      this.heap[element] < this.heap[left] // 区别
+    ) {
+      element = left
+    }
+    if (
+      right < size &&
+      this.heap[element] < this.heap[right] // 区别
+    ) {
+      element = right
+    }
+    if (index !== element) {
+      this.swap(this.heap, index, element)
+      this.siftDown(element)
+    }
+  }
+
+  // 移除最小值
+  extract() {
+    if (this.isEmpty()) return undefined;
+    if (this.size() === 1) return this.heap.shift();
+
+    const removedValue = this.heap[0]
+    this.heap[0] = this.heap.pop()
+    this.siftDown(0)
+    return removedValue
   }
 }
 
