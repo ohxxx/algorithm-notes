@@ -113,6 +113,7 @@
 
 - [`leetcode#215.数组中的第 K 个最大元素`](./second-stage/heap/leetcode215.md)
 - [`leetcode#1046.最后一块石头的重量`](./second-stage/heap/leetcode1046.md)
+- [`leetcode#347.前 K 个高频元素`](./second-stage/heap/leetcode347.md)
 - [`go on...`]()
 
 #### 图
