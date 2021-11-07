@@ -1,55 +1,48 @@
-const Compare = {
-  LESS_THAN: -1,
-  BIGGER_THAN: 1,
-  EQUALS: 0
-}
-
-function defaultCompare(a, b) {
-  if (a === b) {
-    return Compare.EQUALS;
-  }
-  return a < b ? Compare.LESS_THAN : Compare.BIGGER_THAN;
-}
-
 function swap(array, a, b) {
   return [array[a], array[b]] = [array[b], array[a]];
 }
 
-function heapify(array, index, heapSize, compareFn) {
+function heapify(array, index, heapSize) {
   let largest = index
   const left = (2 * index) + 1
   const right = (2 * index) + 2
 
-  if (left < heapSize && compareFn(array[left], array[index]) > 0) {
+  if (
+    left < heapSize &&
+    array[left] > array[index]
+  ) {
     largest = left
   }
 
-  if (right < heapSize && compareFn(array[right], array[largest]) > 0) {
+  if (
+    right < heapSize &&
+    array[right] > array[largest]
+  ) {
     largest = right
   }
 
   if (largest !== index) {
     swap(array, index, largest)
-    heapify(array, largest, heapSize, compareFn)
+    heapify(array, largest, heapSize)
   }
 }
 
-function buildMaxHeap(array, compareFn) {
+function buildMaxHeap(array) {
   for (let i = Math.floor(array.length / 2); i >= 0; i -= 1) {
-    heapify(array, i, array.length, compareFn)
+    heapify(array, i, array.length)
   }
 
   return array
 }
 
-function heapSort(array, compareFn = defaultCompare) {
+function heapSort(array) {
   let heapSize = array.length
 
-  buildMaxHeap(array, compareFn)
+  buildMaxHeap(array)
 
   while (heapSize > 1) {
     swap(array, 0, --heapSize)
-    heapify(array, 0, heapSize, compareFn)
+    heapify(array, 0, heapSize)
   }
 
   return array
