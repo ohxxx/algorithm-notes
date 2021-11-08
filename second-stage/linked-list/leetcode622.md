@@ -35,21 +35,28 @@
 **思路**
 
 ```
-1、使用数组做虚拟环
-2、队头下标可以是数组下标任何位置，队尾使用公式计算得出
+1、使用单链表做虚拟环
+2、入队出队只需要改变链表指向即可
 ```
 
 **实现**
 
 ```js
+class Node {
+  constructor(val, next) {
+    this.val = val;
+    this.next = next;
+  }
+}
+
 /**
  * @param {number} k
  */
 var MyCircularQueue = function (k) {
   this.maxLen = k;
   this.count = 0;
-  this.headIndex = 0;
-  this.queue = [];
+  this.head = null;
+  this.tail = null;
 };
 
 /**
@@ -59,7 +66,13 @@ var MyCircularQueue = function (k) {
 MyCircularQueue.prototype.enQueue = function (value) {
   if (this.isFull()) return false;
 
-  this.queue[(this.headIndex + this.count) % this.maxLen] = value;
+  const newNode = new Node(value);
+  if (this.count === 0) {
+    this.head = this.tail = newNode;
+  } else {
+    this.tail.next = newNode;
+    this.tail = newNode;
+  }
   this.count++;
   return true;
 };
@@ -70,7 +83,7 @@ MyCircularQueue.prototype.enQueue = function (value) {
 MyCircularQueue.prototype.deQueue = function () {
   if (this.isEmpty()) return false;
 
-  this.headIndex = (this.headIndex + 1) % this.maxLen;
+  this.head = this.head.next;
   this.count--;
   return true;
 };
@@ -80,7 +93,8 @@ MyCircularQueue.prototype.deQueue = function () {
  */
 MyCircularQueue.prototype.Front = function () {
   if (this.isEmpty()) return -1;
-  return this.queue[this.headIndex];
+
+  return this.head.val;
 };
 
 /**
@@ -89,8 +103,7 @@ MyCircularQueue.prototype.Front = function () {
 MyCircularQueue.prototype.Rear = function () {
   if (this.isEmpty()) return -1;
 
-  const tailIndex = (this.headIndex + this.count - 1) % this.maxLen;
-  return this.queue[tailIndex];
+  return this.tail.val;
 };
 
 /**
@@ -121,32 +134,45 @@ MyCircularQueue.prototype.isFull = function () {
 
 **实现-复杂度分析**  
 `时间复杂度`：O(1)，没有任何循环或递归，所以时间复杂度为 O(1)  
-`空间复杂度`：O(n)，因为创建了 queue，n 代表队列长度
+`空间复杂度`：O(n)，因为创建了链表，n 代表链表长度
 
 **官方**
 
 ```java
 // java
+class Node {
+  public int value;
+  public Node nextNode;
+
+  public Node(int value) {
+    this.value = value;
+    this.nextNode = null;
+  }
+}
+
 class MyCircularQueue {
 
-  private int[] queue;
-  private int headIndex;
+  private Node head, tail;
   private int count;
   private int capacity;
 
   /** Initialize your data structure here. Set the size of the queue to be k. */
   public MyCircularQueue(int k) {
     this.capacity = k;
-    this.queue = new int[k];
-    this.headIndex = 0;
-    this.count = 0;
   }
 
   /** Insert an element into the circular queue. Return true if the operation is successful. */
   public boolean enQueue(int value) {
     if (this.count == this.capacity)
       return false;
-    this.queue[(this.headIndex + this.count) % this.capacity] = value;
+
+    Node newNode = new Node(value);
+    if (this.count == 0) {
+      head = tail = newNode;
+    } else {
+      tail.nextNode = newNode;
+      tail = newNode;
+    }
     this.count += 1;
     return true;
   }
@@ -155,7 +181,7 @@ class MyCircularQueue {
   public boolean deQueue() {
     if (this.count == 0)
       return false;
-    this.headIndex = (this.headIndex + 1) % this.capacity;
+    this.head = this.head.nextNode;
     this.count -= 1;
     return true;
   }
@@ -164,15 +190,16 @@ class MyCircularQueue {
   public int Front() {
     if (this.count == 0)
       return -1;
-    return this.queue[this.headIndex];
+    else
+      return this.head.value;
   }
 
   /** Get the last item from the queue. */
   public int Rear() {
     if (this.count == 0)
       return -1;
-    int tailIndex = (this.headIndex + this.count - 1) % this.capacity;
-    return this.queue[tailIndex];
+    else
+      return this.tail.value;
   }
 
   /** Checks whether the circular queue is empty or not. */
@@ -185,9 +212,8 @@ class MyCircularQueue {
     return (this.count == this.capacity);
   }
 }
-
 ```
 
 **官方-复杂度分析**  
 `时间复杂度`：O(1)。该数据结构中，所有方法都具有恒定的时间复杂度。  
-`空间复杂度`：O(N)，其中 N 是队列的预分配容量。循环队列的整个生命周期中，都持有该预分配的空间。
+`空间复杂度`：O(N)，与数组实现相同。但是单链表实现 f 方式的内存效率更高。
