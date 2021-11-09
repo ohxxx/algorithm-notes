@@ -62,6 +62,7 @@
 - [`leetcode#387.字符串中的第一个唯一字符`](./second-stage/queue/leetcode387.md)
 - [`leetcode#1700.无法吃午餐的学生数量`](./second-stage/queue/leetcode1700.md)
 - [`leetcode#622.设计循环队列`](./second-stage/queue/leetcode622.md)
+- [`leetcode#286.墙与门`](./second-stage/queue/leetcode286.md)
 - [`go on...`]()
 
 #### 链表
