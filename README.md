@@ -63,6 +63,7 @@
 - [`leetcode#1700.无法吃午餐的学生数量`](./second-stage/queue/leetcode1700.md)
 - [`leetcode#622.设计循环队列`](./second-stage/queue/leetcode622.md)
 - [`leetcode#286.墙与门`](./second-stage/queue/leetcode286.md)
+- [`leetcode#200.岛屿数量`](./second-stage/queue/leetcode200.md)
 - [`go on...`]()
 
 #### 链表
