@@ -65,6 +65,7 @@
 - [`leetcode#286.墙与门`](./second-stage/queue/leetcode286.md)
 - [`leetcode#200.岛屿数量`](./second-stage/queue/leetcode200.md)
 - [`leetcode#752.打开转盘锁`](./second-stage/queue/leetcode752.md)
+- [`leetcode#279.完全平方数`](./second-stage/queue/leetcode279.md)
 - [`go on...`]()
 
 #### 链表
