@@ -152,6 +152,7 @@
 <!-- **二分查找** -->
 
 - `二分查找`-[`leetcode#704.二分查找`](./third-stage/dichotomize/leetcode704.md)
+- `二分查找`-[`leetcode#278.第一个错误的版本`](./third-stage/dichotomize/leetcode278.md)
 
 <!-- **内插搜索** -->
 
