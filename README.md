@@ -129,16 +129,16 @@
 
 <!-- **冒泡排序** -->
 
-- `冒泡排序`-[`leetcode#912.排序数组`](./second-stage/sorting-search-algorithm/sorting/bubble-sort/leetcode912.md)
+- `冒泡排序`-[`leetcode#912.排序数组`](./third-stage/sorting/bubble-sort/leetcode912.md)
 
 <!-- **选择排序** -->
 
-- `选择排序`-[`leetcode#88.合并两个有序数组`](./second-stage/sorting-search-algorithm/sorting/selection-sort/leetcode88.md)
+- `选择排序`-[`leetcode#88.合并两个有序数组`](./third-stage/sorting/selection-sort/leetcode88.md)
 
 <!-- **归并排序** -->
 
-- `归并排序`-[`leetcode#148.排序链表`](./second-stage/sorting-search-algorithm/sorting/merge-sort/leetcode148.md)
-- `归并排序`-[`leetcode#912.排序数组`](./second-stage/sorting-search-algorithm/sorting/merge-sort/leetcode912.md)
+- `归并排序`-[`leetcode#148.排序链表`](./third-stage/sorting/merge-sort/leetcode148.md)
+- `归并排序`-[`leetcode#912.排序数组`](./third-stage/sorting/merge-sort/leetcode912.md)
 
 <!-- **快速排序** -->
 <!-- **计数排序** -->
@@ -154,11 +154,11 @@
 
 **分而治之**
 
-- [`leetcode#374.猜数字大小`](./second-stage/algorithm-design/devide-and-conquer/leetcode374.md)
+- [`leetcode#374.猜数字大小`](./third-stage/devide-and-conquer/leetcode374.md)
 
 **动态规划**
 
-- [`leetcode#70.爬楼梯`](./second-stage/algorithm-design/dynamic-programming/leetcode70.md)
+- [`leetcode#70.爬楼梯`](./third-stage/dynamic-programming/leetcode70.md)
 
 **贪心算法**
 
