@@ -174,3 +174,4 @@
 - [`leetcode#977.有序数组的平方`](./third-stage/double-pointer/leetcode977.md)
 - [`leetcode#189.轮转数组`](./third-stage/double-pointer/leetcode189.md)
 - [`leetcode#283.移动零`](./third-stage/double-pointer/leetcode283.md)
+- [`leetcode#167.两数之和 II - 输入有序数组`](./third-stage/double-pointer/leetcode167.md)
