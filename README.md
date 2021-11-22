@@ -171,13 +171,21 @@
 
 **双指针**
 
-- [`leetcode#977.有序数组的平方`](./third-stage/double-pointer/leetcode977.md)
-- [`leetcode#189.轮转数组`](./third-stage/double-pointer/leetcode189.md)
-- [`leetcode#283.移动零`](./third-stage/double-pointer/leetcode283.md)
-- [`leetcode#167.两数之和 II - 输入有序数组`](./third-stage/double-pointer/leetcode167.md)
-- [`leetcode#344.反转字符串`](./third-stage/double-pointer/leetcode344.md)
-- [`leetcode#557.反转字符串中的单词 III`](./third-stage/double-pointer/leetcode557.md)
-- [`leetcode#876.链表的中间结点`](./third-stage/double-pointer/leetcode876.md)
-- [`leetcode#19.删除链表的倒数第 N 个结点`](./third-stage/double-pointer/leetcode19.md)
-- [`leetcode#26.删除有序数组中的重复项`](./third-stage/double-pointer/leetcode26.md)
-- [`leetcode#3.无重复字符的最长子串`](./third-stage/double-pointer/leetcode3.md)
+<!-- **左右指针** -->
+
+- `左右指针`-[`leetcode#977.有序数组的平方`](./third-stage/double-pointer/leetcode977.md)
+- `左右指针`-[`leetcode#189.轮转数组`](./third-stage/double-pointer/leetcode189.md)
+- `左右指针`-[`leetcode#167.两数之和 II - 输入有序数组`](./third-stage/double-pointer/leetcode167.md)
+- `左右指针`-[`leetcode#344.反转字符串`](./third-stage/double-pointer/leetcode344.md)
+- `左右指针`-[`leetcode#557.反转字符串中的单词 III`](./third-stage/double-pointer/leetcode557.md)
+
+<!-- **快慢指针** -->
+
+- `快慢指针`-[`leetcode#876.链表的中间结点`](./third-stage/double-pointer/leetcode876.md)
+- `快慢指针`-[`leetcode#19.删除链表的倒数第 N 个结点`](./third-stage/double-pointer/leetcode19.md)
+- `快慢指针`-[`leetcode#26.删除有序数组中的重复项`](./third-stage/double-pointer/leetcode26.md)
+- `快慢指针`-[`leetcode#283.移动零`](./third-stage/double-pointer/leetcode283.md)
+
+<!-- **滑动窗口** -->
+
+- `滑动窗口`-[`leetcode#3.无重复字符的最长子串`](./third-stage/double-pointer/leetcode3.md)
