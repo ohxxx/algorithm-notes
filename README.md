@@ -185,6 +185,7 @@
 - `快慢指针`-[`leetcode#19.删除链表的倒数第 N 个结点`](./third-stage/double-pointer/leetcode19.md)
 - `快慢指针`-[`leetcode#26.删除有序数组中的重复项`](./third-stage/double-pointer/leetcode26.md)
 - `快慢指针`-[`leetcode#283.移动零`](./third-stage/double-pointer/leetcode283.md)
+- `快慢指针`-[`leetcode#27.移除元素`](./third-stage/double-pointer/leetcode27.md)
 
 <!-- **滑动窗口** -->
 
