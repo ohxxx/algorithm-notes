@@ -186,6 +186,7 @@
 - `快慢指针`-[`leetcode#26.删除有序数组中的重复项`](./third-stage/double-pointer/leetcode26.md)
 - `快慢指针`-[`leetcode#283.移动零`](./third-stage/double-pointer/leetcode283.md)
 - `快慢指针`-[`leetcode#27.移除元素`](./third-stage/double-pointer/leetcode27.md)
+- `快慢指针`-[`leetcode#80.删除有序数组中的重复项 II`](./third-stage/double-pointer/leetcode80.md)
 
 <!-- **滑动窗口** -->
 
