@@ -178,6 +178,7 @@
 - `左右指针`-[`leetcode#167.两数之和 II - 输入有序数组`](./third-stage/double-pointer/leetcode167.md)
 - `左右指针`-[`leetcode#344.反转字符串`](./third-stage/double-pointer/leetcode344.md)
 - `左右指针`-[`leetcode#557.反转字符串中的单词 III`](./third-stage/double-pointer/leetcode557.md)
+- `左右指针`-[`leetcode#75.颜色分类`](./third-stage/double-pointer/leetcode75.md)
 
 <!-- **快慢指针** -->
 
