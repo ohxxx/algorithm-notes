@@ -192,3 +192,4 @@
 <!-- **滑动窗口** -->
 
 - `滑动窗口`-[`leetcode#3.无重复字符的最长子串`](./third-stage/double-pointer/leetcode3.md)
+- `滑动窗口`-[`leetcode#643.子数组最大平均数 I`](./third-stage/double-pointer/leetcode643.md)
