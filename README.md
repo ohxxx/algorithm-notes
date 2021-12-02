@@ -196,3 +196,4 @@
 - `滑动窗口`-[`leetcode#643.子数组最大平均数 I`](./third-stage/double-pointer/leetcode643.md)
 - `滑动窗口`-[`leetcode#1456.定长子串中元音的最大数目`](./third-stage/double-pointer/leetcode1456.md)
 - `滑动窗口`-[`leetcode#1423.可获得的最大点数`](./third-stage/double-pointer/leetcode1423.md)
+- `滑动窗口`-[`leetcode#76.最小覆盖子串`](./third-stage/double-pointer/leetcode76.md)
