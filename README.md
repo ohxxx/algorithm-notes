@@ -198,3 +198,4 @@
 - `滑动窗口`-[`leetcode#1423.可获得的最大点数`](./third-stage/double-pointer/leetcode1423.md)
 - `滑动窗口`-[`leetcode#76.最小覆盖子串`](./third-stage/double-pointer/leetcode76.md)
 - `滑动窗口`-[`leetcode#209.长度最小的子数组`](./third-stage/double-pointer/leetcode209.md)
+- `滑动窗口`-[`leetcode#1695.删除子数组的最大得分`](./third-stage/double-pointer/leetcode1695.md)
