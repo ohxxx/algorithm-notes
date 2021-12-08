@@ -200,3 +200,4 @@
 - `滑动窗口`-[`leetcode#209.长度最小的子数组`](./third-stage/double-pointer/leetcode209.md)
 - `滑动窗口`-[`leetcode#1695.删除子数组的最大得分`](./third-stage/double-pointer/leetcode1695.md)
 - `滑动窗口`-[`leetcode#438.找到字符串中所有字母异位词`](./third-stage/double-pointer/leetcode438.md)
+- `滑动窗口`-[`leetcode#567.字符串的排列`](./third-stage/double-pointer/leetcode567.md)
