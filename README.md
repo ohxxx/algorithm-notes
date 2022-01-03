@@ -164,6 +164,7 @@
 **动态规划**
 
 - [`leetcode#70.爬楼梯`](./third-stage/dynamic-programming/leetcode70.md)
+- [`leetcode#509.斐波那契数`](./third-stage/dynamic-programming/leetcode509.md)
 
 **贪心算法**
 
