@@ -166,6 +166,7 @@
 - [`leetcode#70.爬楼梯`](./third-stage/dynamic-programming/leetcode70.md)
 - [`leetcode#509.斐波那契数`](./third-stage/dynamic-programming/leetcode509.md)
 - [`leetcode#746.使用最小花费爬楼梯`](./third-stage/dynamic-programming/leetcode746.md)
+- [`leetcode#198.打家劫舍`](./third-stage/dynamic-programming/leetcode198.md)
 
 **贪心算法**
 
